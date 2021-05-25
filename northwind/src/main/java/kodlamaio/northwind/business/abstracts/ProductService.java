@@ -2,10 +2,13 @@ package kodlamaio.northwind.business.abstracts;
 
 import java.util.List;
 
+import kodlamaio.northwind.core.utilities.results.DataResult;
+import kodlamaio.northwind.core.utilities.results.Result;
 import kodlamaio.northwind.entities.concretes.Product;
 
 public interface ProductService {
-	List<Product> getall();
+	DataResult<List<Product>> getall();
+	Result add(Product product); 
 	
 
 }
